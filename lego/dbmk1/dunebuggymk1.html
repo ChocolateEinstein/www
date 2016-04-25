@@ -3,18 +3,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>Lego Digital Designer</title>
-		
+		<title>Dune Buggy Mk1</title>
+
 		<style type="text/css">
-			
+
 			div
 			{
-			    font-family:arial,sans-serif; 
+			    font-family:arial,sans-serif;
 			    font-size: 11px;
 			    color:#000000;
 			}
-			
-			.header 
+
+			.header
 			{
 			    width:1024px;
 			    background-image:url('Building Instructions [dune basher]-images/Images/Header.png');
@@ -23,25 +23,25 @@
 			    height:40px;
 			    padding-left:10px;
 			}
-            
+
             .headerPrint
 			{
 			    display:none;
 			}
-			
+
 			.footer
 			{
 			    font-size:10px;
 			    text-align:center;
 			    width:1024px;
 			}
-			
+
 			.nav
 			{
 			    text-align:center;
 			    width:1024px;
 			}
-			
+
 			.step
 			{
 			    display:none;
@@ -53,63 +53,63 @@
 			    width:1024px;
 			    height:620px;
 			}
-			
-			.modelParts 
-			{ 
-			    list-style-type:none; 
-			    padding:4px 0px 0px 0px; 
-			    margin:0px; 
+
+			.modelParts
+			{
+			    list-style-type:none;
+			    padding:4px 0px 0px 0px;
+			    margin:0px;
 			}
-			.modelParts ul 
-			{ 
-			    list-style-type:none; 
-			    float:left; 
-			    padding:5px 0px 0px 5px; 
-			    width:140px; 
-			    border:1px dotted gray; 
-			    margin:0px 
+			.modelParts ul
+			{
+			    list-style-type:none;
+			    float:left;
+			    padding:5px 0px 0px 5px;
+			    width:140px;
+			    border:1px dotted gray;
+			    margin:0px
 			 }
-			.modelParts ul li 
-			{ 
-			    padding:0px; 
-			    margin:0px 
+			.modelParts ul li
+			{
+			    padding:0px;
+			    margin:0px
 			}
-			.modelParts ul li img 
-			{ 
-			    padding:0px; 
-			    height:64px; 
-			    width:64px; 
-			    margin-left:15px 
+			.modelParts ul li img
+			{
+			    padding:0px;
+			    height:64px;
+			    width:64px;
+			    margin-left:15px
 			}
-			
-			.stepTextTop p 
-			{ 
-			    margin:0px; 
-			    padding:10px 0px 0px 0px;  
+
+			.stepTextTop p
+			{
+			    margin:0px;
+			    padding:10px 0px 0px 0px;
 			 }
 			.stepText p
-			{ 
-			    margin:0px; 
-			    width:30px; 
+			{
+			    margin:0px;
+			    width:30px;
 			    padding:25px 0px 0px 10px;
 			}
-            
+
             .biElement
             {
                 float:left;
                 margin:20px;
                 width:280px;
-                
+
             }
-            
+
             .stepelements
             {
                 width:1024px;
 			    height:620px;
                 overflow:auto;
             }
-            
-			
+
+
 		</style>
 
         <style type="text/css" media="print">
@@ -117,27 +117,27 @@
 			{
 			    display:none;
 			}
-			
+
 			.stepdisplay
 			{
 			    display:none;
 			}
-            
+
             .stepelements
 			{
 			    display:none;
 			}
-            
+
             .header
 			{
 			    display:none;
 			}
-            
+
             .headerPrint
 			{
 			    display:block;
 			}
-			
+
 			.step
 			{
 			    display:block;
@@ -145,18 +145,18 @@
 			    height:620px;
 			    page-break-after:always;
 			}
-            
+
             .biElement
             {
-                width:280px;                
+                width:280px;
             }
-            
+
         </style>
 
         <script language="javascript" type="text/javascript">
-            
+
             var biCurStep=0;
-            
+
             function returnTest(e) {
                 var keynum = 0;
                 if (window.event) {
@@ -165,11 +165,11 @@
                 else if (e.which) {
                     keynum = e.which
                 }
-                if (keynum == 13) 
+                if (keynum == 13)
                 {
                     try {
                         biStep(parseInt(window.document.getElementById('stepNumber').value,10));
-                    } 
+                    }
                     catch(err) {
                         biStep(0);
                     }
@@ -188,7 +188,7 @@
                         cn='stepelements';
                         id='step_elements';
                     }
-                    
+
                     if (i==step) {
                         window.document.getElementById('step_display').innerHTML=window.document.getElementById(id).innerHTML;
 						   window.document.getElementById('step_display').className=cn;
@@ -202,7 +202,7 @@
 	<body onload="biStep(0)">
         <div class="header"><img src="Building Instructions [dune basher]-images/Images/Logo.png" /></div>
         <div class="headerPrint"><img src="Building Instructions [dune basher]-images/Images/Header_print.png" /></div>
-		
+
         <div class="stepdisplay" id="step_display"></div>
 
         <div class="step" id="step_0">
@@ -211,7 +211,7 @@
             <div style="clear:both"></div>
         </div>
 
-			
+
         <div class="step" id="step_1">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 1 of 170</span></p></div>
@@ -225,7 +225,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step1.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_2">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 2 of 170</span></p></div>
@@ -239,7 +239,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step2.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_3">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 3 of 170</span></p></div>
@@ -253,7 +253,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step3.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_4">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 4 of 170</span></p></div>
@@ -271,7 +271,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step4.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_5">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 5 of 170</span></p></div>
@@ -285,7 +285,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step5.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_6">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 6 of 170</span></p></div>
@@ -299,7 +299,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step6.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_7">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 7 of 170</span></p></div>
@@ -317,7 +317,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step7.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_8">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 8 of 170</span></p></div>
@@ -329,7 +329,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step8.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_9">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 9 of 170</span></p></div>
@@ -343,7 +343,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step9.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_10">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 10 of 170</span></p></div>
@@ -359,7 +359,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step10.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_11">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 11 of 170</span></p></div>
@@ -373,7 +373,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step11.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_12">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 12 of 170</span></p></div>
@@ -391,7 +391,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step12.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_13">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 13 of 170</span></p></div>
@@ -407,7 +407,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step13.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_14">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 14 of 170</span></p></div>
@@ -419,7 +419,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step14.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_15">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 15 of 170</span></p></div>
@@ -435,7 +435,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step15.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_16">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 16 of 170</span></p></div>
@@ -451,7 +451,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step16.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_17">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 17 of 170</span></p></div>
@@ -469,7 +469,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step17.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_18">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 18 of 170</span></p></div>
@@ -485,7 +485,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step18.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_19">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 19 of 170</span></p></div>
@@ -497,7 +497,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step19.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_20">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 20 of 170</span></p></div>
@@ -513,7 +513,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step20.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_21">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 21 of 170</span></p></div>
@@ -529,7 +529,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step21.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_22">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 22 of 170</span></p></div>
@@ -547,7 +547,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step22.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_23">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 23 of 170</span></p></div>
@@ -563,7 +563,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step23.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_24">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 24 of 170</span></p></div>
@@ -575,7 +575,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step24.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_25">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 25 of 170</span></p></div>
@@ -593,7 +593,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step25.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_26">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 26 of 170</span></p></div>
@@ -605,7 +605,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step26.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_27">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 27 of 170</span></p></div>
@@ -619,7 +619,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step27.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_28">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 28 of 170</span></p></div>
@@ -639,7 +639,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step28.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_29">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 29 of 170</span></p></div>
@@ -657,7 +657,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step29.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_30">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 30 of 170</span></p></div>
@@ -677,7 +677,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step30.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_31">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 31 of 170</span></p></div>
@@ -689,7 +689,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step31.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_32">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 32 of 170</span></p></div>
@@ -703,7 +703,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step32.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_33">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 33 of 170</span></p></div>
@@ -719,7 +719,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step33.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_34">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 34 of 170</span></p></div>
@@ -731,7 +731,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step34.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_35">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 35 of 170</span></p></div>
@@ -745,7 +745,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step35.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_36">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 36 of 170</span></p></div>
@@ -759,7 +759,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step36.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_37">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 37 of 170</span></p></div>
@@ -775,7 +775,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step37.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_38">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 38 of 170</span></p></div>
@@ -791,7 +791,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step38.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_39">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 39 of 170</span></p></div>
@@ -809,7 +809,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step39.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_40">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 40 of 170</span></p></div>
@@ -829,7 +829,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step40.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_41">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 41 of 170</span></p></div>
@@ -849,7 +849,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step41.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_42">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 42 of 170</span></p></div>
@@ -861,7 +861,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step42.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_43">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 43 of 170</span></p></div>
@@ -875,7 +875,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step43.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_44">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 44 of 170</span></p></div>
@@ -893,7 +893,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step44.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_45">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 45 of 170</span></p></div>
@@ -913,7 +913,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step45.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_46">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 46 of 170</span></p></div>
@@ -931,7 +931,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step46.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_47">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 47 of 170</span></p></div>
@@ -951,7 +951,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step47.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_48">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 48 of 170</span></p></div>
@@ -969,7 +969,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step48.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_49">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 49 of 170</span></p></div>
@@ -987,7 +987,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step49.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_50">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 50 of 170</span></p></div>
@@ -1005,7 +1005,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step50.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_51">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 51 of 170</span></p></div>
@@ -1017,7 +1017,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step51.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_52">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 52 of 170</span></p></div>
@@ -1033,7 +1033,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step52.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_53">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 53 of 170</span></p></div>
@@ -1053,7 +1053,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step53.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_54">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 54 of 170</span></p></div>
@@ -1073,7 +1073,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step54.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_55">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 55 of 170</span></p></div>
@@ -1093,7 +1093,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step55.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_56">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 56 of 170</span></p></div>
@@ -1111,7 +1111,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step56.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_57">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 57 of 170</span></p></div>
@@ -1125,7 +1125,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step57.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_58">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 58 of 170</span></p></div>
@@ -1137,7 +1137,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step58.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_59">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 59 of 170</span></p></div>
@@ -1155,7 +1155,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step59.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_60">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 60 of 170</span></p></div>
@@ -1167,7 +1167,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step60.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_61">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 61 of 170</span></p></div>
@@ -1185,7 +1185,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step61.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_62">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 62 of 170</span></p></div>
@@ -1197,7 +1197,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step62.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_63">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 63 of 170</span></p></div>
@@ -1213,7 +1213,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step63.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_64">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 64 of 170</span></p></div>
@@ -1225,7 +1225,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step64.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_65">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 65 of 170</span></p></div>
@@ -1243,7 +1243,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step65.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_66">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 66 of 170</span></p></div>
@@ -1259,7 +1259,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step66.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_67">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 67 of 170</span></p></div>
@@ -1275,7 +1275,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step67.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_68">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 68 of 170</span></p></div>
@@ -1295,7 +1295,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step68.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_69">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 69 of 170</span></p></div>
@@ -1315,7 +1315,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step69.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_70">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 70 of 170</span></p></div>
@@ -1327,7 +1327,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step70.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_71">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 71 of 170</span></p></div>
@@ -1341,7 +1341,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step71.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_72">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 72 of 170</span></p></div>
@@ -1355,7 +1355,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step72.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_73">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 73 of 170</span></p></div>
@@ -1367,7 +1367,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step73.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_74">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 74 of 170</span></p></div>
@@ -1381,7 +1381,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step74.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_75">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 75 of 170</span></p></div>
@@ -1395,7 +1395,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step75.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_76">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 76 of 170</span></p></div>
@@ -1407,7 +1407,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step76.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_77">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 77 of 170</span></p></div>
@@ -1423,7 +1423,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step77.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_78">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 78 of 170</span></p></div>
@@ -1441,7 +1441,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step78.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_79">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 79 of 170</span></p></div>
@@ -1461,7 +1461,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step79.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_80">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 80 of 170</span></p></div>
@@ -1481,7 +1481,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step80.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_81">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 81 of 170</span></p></div>
@@ -1499,7 +1499,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step81.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_82">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 82 of 170</span></p></div>
@@ -1515,7 +1515,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step82.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_83">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 83 of 170</span></p></div>
@@ -1533,7 +1533,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step83.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_84">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 84 of 170</span></p></div>
@@ -1551,7 +1551,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step84.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_85">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 85 of 170</span></p></div>
@@ -1567,7 +1567,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step85.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_86">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 86 of 170</span></p></div>
@@ -1585,7 +1585,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step86.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_87">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 87 of 170</span></p></div>
@@ -1605,7 +1605,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step87.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_88">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 88 of 170</span></p></div>
@@ -1623,7 +1623,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step88.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_89">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 89 of 170</span></p></div>
@@ -1641,7 +1641,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step89.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_90">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 90 of 170</span></p></div>
@@ -1661,7 +1661,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step90.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_91">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 91 of 170</span></p></div>
@@ -1679,7 +1679,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step91.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_92">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 92 of 170</span></p></div>
@@ -1697,7 +1697,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step92.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_93">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 93 of 170</span></p></div>
@@ -1715,7 +1715,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step93.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_94">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 94 of 170</span></p></div>
@@ -1729,7 +1729,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step94.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_95">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 95 of 170</span></p></div>
@@ -1743,7 +1743,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step95.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_96">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 96 of 170</span></p></div>
@@ -1761,7 +1761,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step96.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_97">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 97 of 170</span></p></div>
@@ -1777,7 +1777,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step97.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_98">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 98 of 170</span></p></div>
@@ -1789,7 +1789,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step98.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_99">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 99 of 170</span></p></div>
@@ -1805,7 +1805,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step99.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_100">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 100 of 170</span></p></div>
@@ -1823,7 +1823,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step100.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_101">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 101 of 170</span></p></div>
@@ -1841,7 +1841,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step101.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_102">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 102 of 170</span></p></div>
@@ -1857,7 +1857,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step102.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_103">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 103 of 170</span></p></div>
@@ -1877,7 +1877,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step103.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_104">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 104 of 170</span></p></div>
@@ -1895,7 +1895,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step104.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_105">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 105 of 170</span></p></div>
@@ -1911,7 +1911,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step105.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_106">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 106 of 170</span></p></div>
@@ -1931,7 +1931,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step106.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_107">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 107 of 170</span></p></div>
@@ -1947,7 +1947,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step107.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_108">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 108 of 170</span></p></div>
@@ -1967,7 +1967,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step108.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_109">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 109 of 170</span></p></div>
@@ -1987,7 +1987,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step109.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_110">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 110 of 170</span></p></div>
@@ -2007,7 +2007,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step110.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_111">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 111 of 170</span></p></div>
@@ -2025,7 +2025,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step111.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_112">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 112 of 170</span></p></div>
@@ -2045,7 +2045,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step112.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_113">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 113 of 170</span></p></div>
@@ -2063,7 +2063,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step113.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_114">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 114 of 170</span></p></div>
@@ -2081,7 +2081,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step114.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_115">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 115 of 170</span></p></div>
@@ -2097,7 +2097,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step115.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_116">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 116 of 170</span></p></div>
@@ -2113,7 +2113,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step116.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_117">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 117 of 170</span></p></div>
@@ -2133,7 +2133,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step117.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_118">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 118 of 170</span></p></div>
@@ -2149,7 +2149,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step118.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_119">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 119 of 170</span></p></div>
@@ -2169,7 +2169,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step119.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_120">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 120 of 170</span></p></div>
@@ -2187,7 +2187,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step120.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_121">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 121 of 170</span></p></div>
@@ -2207,7 +2207,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step121.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_122">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 122 of 170</span></p></div>
@@ -2227,7 +2227,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step122.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_123">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 123 of 170</span></p></div>
@@ -2245,7 +2245,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step123.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_124">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 124 of 170</span></p></div>
@@ -2265,7 +2265,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step124.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_125">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 125 of 170</span></p></div>
@@ -2285,7 +2285,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step125.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_126">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 126 of 170</span></p></div>
@@ -2303,7 +2303,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step126.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_127">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 127 of 170</span></p></div>
@@ -2321,7 +2321,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step127.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_128">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 128 of 170</span></p></div>
@@ -2341,7 +2341,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step128.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_129">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 129 of 170</span></p></div>
@@ -2357,7 +2357,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step129.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_130">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 130 of 170</span></p></div>
@@ -2375,7 +2375,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step130.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_131">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 131 of 170</span></p></div>
@@ -2395,7 +2395,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step131.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_132">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 132 of 170</span></p></div>
@@ -2409,7 +2409,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step132.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_133">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 133 of 170</span></p></div>
@@ -2427,7 +2427,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step133.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_134">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 134 of 170</span></p></div>
@@ -2443,7 +2443,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step134.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_135">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 135 of 170</span></p></div>
@@ -2459,7 +2459,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step135.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_136">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 136 of 170</span></p></div>
@@ -2473,7 +2473,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step136.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_137">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 137 of 170</span></p></div>
@@ -2491,7 +2491,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step137.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_138">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 138 of 170</span></p></div>
@@ -2509,7 +2509,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step138.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_139">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 139 of 170</span></p></div>
@@ -2523,7 +2523,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step139.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_140">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 140 of 170</span></p></div>
@@ -2541,7 +2541,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step140.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_141">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 141 of 170</span></p></div>
@@ -2559,7 +2559,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step141.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_142">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 142 of 170</span></p></div>
@@ -2573,7 +2573,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step142.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_143">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 143 of 170</span></p></div>
@@ -2587,7 +2587,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step143.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_144">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 144 of 170</span></p></div>
@@ -2605,7 +2605,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step144.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_145">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 145 of 170</span></p></div>
@@ -2619,7 +2619,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step145.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_146">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 146 of 170</span></p></div>
@@ -2633,7 +2633,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step146.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_147">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 147 of 170</span></p></div>
@@ -2649,7 +2649,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step147.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_148">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 148 of 170</span></p></div>
@@ -2663,7 +2663,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step148.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_149">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 149 of 170</span></p></div>
@@ -2677,7 +2677,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step149.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_150">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 150 of 170</span></p></div>
@@ -2691,7 +2691,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step150.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_151">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 151 of 170</span></p></div>
@@ -2707,7 +2707,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step151.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_152">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 152 of 170</span></p></div>
@@ -2723,7 +2723,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step152.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_153">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 153 of 170</span></p></div>
@@ -2737,7 +2737,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step153.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_154">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 154 of 170</span></p></div>
@@ -2753,7 +2753,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step154.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_155">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 155 of 170</span></p></div>
@@ -2767,7 +2767,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step155.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_156">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 156 of 170</span></p></div>
@@ -2787,7 +2787,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step156.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_157">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 157 of 170</span></p></div>
@@ -2805,7 +2805,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step157.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_158">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 158 of 170</span></p></div>
@@ -2825,7 +2825,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step158.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_159">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 159 of 170</span></p></div>
@@ -2843,7 +2843,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step159.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_160">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 160 of 170</span></p></div>
@@ -2859,7 +2859,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step160.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_161">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 161 of 170</span></p></div>
@@ -2877,7 +2877,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step161.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_162">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 162 of 170</span></p></div>
@@ -2895,7 +2895,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step162.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_163">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 163 of 170</span></p></div>
@@ -2911,7 +2911,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step163.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_164">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 164 of 170</span></p></div>
@@ -2929,7 +2929,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step164.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_165">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 165 of 170</span></p></div>
@@ -2949,7 +2949,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step165.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_166">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 166 of 170</span></p></div>
@@ -2967,7 +2967,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step166.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_167">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 167 of 170</span></p></div>
@@ -2985,7 +2985,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step167.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_168">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 168 of 170</span></p></div>
@@ -3005,7 +3005,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step168.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_169">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 169 of 170</span></p></div>
@@ -3017,7 +3017,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [dune basher]-images/Step169.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_170">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 170 of 170</span></p></div>
@@ -3042,7 +3042,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3053,7 +3053,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3064,7 +3064,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3075,7 +3075,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3086,7 +3086,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3097,7 +3097,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3108,7 +3108,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3119,7 +3119,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3130,7 +3130,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3141,7 +3141,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3152,7 +3152,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3163,7 +3163,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3174,7 +3174,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3185,7 +3185,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3196,7 +3196,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3207,7 +3207,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3218,7 +3218,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3229,7 +3229,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3240,7 +3240,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3251,7 +3251,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3262,7 +3262,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3273,7 +3273,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3284,7 +3284,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3295,7 +3295,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3306,7 +3306,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3317,7 +3317,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3328,7 +3328,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3339,7 +3339,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3350,7 +3350,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3361,7 +3361,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3372,7 +3372,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3383,7 +3383,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3394,7 +3394,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3405,7 +3405,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3416,7 +3416,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3427,7 +3427,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3438,7 +3438,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3449,7 +3449,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3460,7 +3460,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3471,7 +3471,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3482,7 +3482,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3493,7 +3493,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3504,7 +3504,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3515,7 +3515,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3526,7 +3526,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3537,7 +3537,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3548,7 +3548,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3559,7 +3559,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3570,7 +3570,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3581,7 +3581,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3592,7 +3592,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3603,7 +3603,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3614,7 +3614,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3625,7 +3625,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3636,7 +3636,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3647,7 +3647,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3658,7 +3658,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3669,7 +3669,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3680,7 +3680,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3691,7 +3691,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3702,7 +3702,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3713,7 +3713,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3724,7 +3724,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3735,7 +3735,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3746,7 +3746,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3757,7 +3757,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3768,7 +3768,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3779,7 +3779,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3790,7 +3790,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3801,7 +3801,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3812,7 +3812,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3823,7 +3823,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3834,7 +3834,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3845,7 +3845,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3856,7 +3856,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3867,7 +3867,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3878,7 +3878,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3889,7 +3889,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3900,7 +3900,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -3911,7 +3911,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 
             <div style="clear:both"></div>
         </div>
@@ -3928,9 +3928,7 @@
                     <td><a onclick="window.print();return false;" href="#"><img border="0" alt="Print" src="Building Instructions [dune basher]-images/Images/PrintIcon.png" /></a></td>
                 </tr>
             </table>
-        </div> 
+        </div>
 		<div style="clear:both;">&nbsp;</div>
-		<div class="footer">© 2012 The LEGO Group. All rights reserved.<br />
-Use of the LEGO Digital Designer html print tool, signifies your agreement to the terms of use.</div>
 	</body>
 </html>

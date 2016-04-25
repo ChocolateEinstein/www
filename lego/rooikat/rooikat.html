@@ -3,18 +3,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>Lego Digital Designer</title>
-		
+		<title>Rooikat</title>
+
 		<style type="text/css">
-			
+
 			div
 			{
-			    font-family:arial,sans-serif; 
+			    font-family:arial,sans-serif;
 			    font-size: 11px;
 			    color:#000000;
 			}
-			
-			.header 
+
+			.header
 			{
 			    width:1024px;
 			    background-image:url('Building Instructions [Rooikat]-images/Images/Header.png');
@@ -23,25 +23,25 @@
 			    height:40px;
 			    padding-left:10px;
 			}
-            
+
             .headerPrint
 			{
 			    display:none;
 			}
-			
+
 			.footer
 			{
 			    font-size:10px;
 			    text-align:center;
 			    width:1024px;
 			}
-			
+
 			.nav
 			{
 			    text-align:center;
 			    width:1024px;
 			}
-			
+
 			.step
 			{
 			    display:none;
@@ -53,63 +53,63 @@
 			    width:1024px;
 			    height:620px;
 			}
-			
-			.modelParts 
-			{ 
-			    list-style-type:none; 
-			    padding:4px 0px 0px 0px; 
-			    margin:0px; 
+
+			.modelParts
+			{
+			    list-style-type:none;
+			    padding:4px 0px 0px 0px;
+			    margin:0px;
 			}
-			.modelParts ul 
-			{ 
-			    list-style-type:none; 
-			    float:left; 
-			    padding:5px 0px 0px 5px; 
-			    width:140px; 
-			    border:1px dotted gray; 
-			    margin:0px 
+			.modelParts ul
+			{
+			    list-style-type:none;
+			    float:left;
+			    padding:5px 0px 0px 5px;
+			    width:140px;
+			    border:1px dotted gray;
+			    margin:0px
 			 }
-			.modelParts ul li 
-			{ 
-			    padding:0px; 
-			    margin:0px 
+			.modelParts ul li
+			{
+			    padding:0px;
+			    margin:0px
 			}
-			.modelParts ul li img 
-			{ 
-			    padding:0px; 
-			    height:64px; 
-			    width:64px; 
-			    margin-left:15px 
+			.modelParts ul li img
+			{
+			    padding:0px;
+			    height:64px;
+			    width:64px;
+			    margin-left:15px
 			}
-			
-			.stepTextTop p 
-			{ 
-			    margin:0px; 
-			    padding:10px 0px 0px 0px;  
+
+			.stepTextTop p
+			{
+			    margin:0px;
+			    padding:10px 0px 0px 0px;
 			 }
 			.stepText p
-			{ 
-			    margin:0px; 
-			    width:30px; 
+			{
+			    margin:0px;
+			    width:30px;
 			    padding:25px 0px 0px 10px;
 			}
-            
+
             .biElement
             {
                 float:left;
                 margin:20px;
                 width:280px;
-                
+
             }
-            
+
             .stepelements
             {
                 width:1024px;
 			    height:620px;
                 overflow:auto;
             }
-            
-			
+
+
 		</style>
 
         <style type="text/css" media="print">
@@ -117,27 +117,27 @@
 			{
 			    display:none;
 			}
-			
+
 			.stepdisplay
 			{
 			    display:none;
 			}
-            
+
             .stepelements
 			{
 			    display:none;
 			}
-            
+
             .header
 			{
 			    display:none;
 			}
-            
+
             .headerPrint
 			{
 			    display:block;
 			}
-			
+
 			.step
 			{
 			    display:block;
@@ -145,18 +145,18 @@
 			    height:620px;
 			    page-break-after:always;
 			}
-            
+
             .biElement
             {
-                width:280px;                
+                width:280px;
             }
-            
+
         </style>
 
         <script language="javascript" type="text/javascript">
-            
+
             var biCurStep=0;
-            
+
             function returnTest(e) {
                 var keynum = 0;
                 if (window.event) {
@@ -165,11 +165,11 @@
                 else if (e.which) {
                     keynum = e.which
                 }
-                if (keynum == 13) 
+                if (keynum == 13)
                 {
                     try {
                         biStep(parseInt(window.document.getElementById('stepNumber').value,10));
-                    } 
+                    }
                     catch(err) {
                         biStep(0);
                     }
@@ -188,7 +188,7 @@
                         cn='stepelements';
                         id='step_elements';
                     }
-                    
+
                     if (i==step) {
                         window.document.getElementById('step_display').innerHTML=window.document.getElementById(id).innerHTML;
 						   window.document.getElementById('step_display').className=cn;
@@ -202,7 +202,7 @@
 	<body onload="biStep(0)">
         <div class="header"><img src="Building Instructions [Rooikat]-images/Images/Logo.png" /></div>
         <div class="headerPrint"><img src="Building Instructions [Rooikat]-images/Images/Header_print.png" /></div>
-		
+
         <div class="stepdisplay" id="step_display"></div>
 
         <div class="step" id="step_0">
@@ -211,7 +211,7 @@
             <div style="clear:both"></div>
         </div>
 
-			
+
         <div class="step" id="step_1">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 1 of 295</span></p></div>
@@ -229,7 +229,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step1.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_2">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 2 of 295</span></p></div>
@@ -241,7 +241,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step2.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_3">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 3 of 295</span></p></div>
@@ -257,7 +257,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step3.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_4">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 4 of 295</span></p></div>
@@ -275,7 +275,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step4.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_5">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 5 of 295</span></p></div>
@@ -291,7 +291,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step5.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_6">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 6 of 295</span></p></div>
@@ -305,7 +305,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step6.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_7">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 7 of 295</span></p></div>
@@ -321,7 +321,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step7.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_8">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 8 of 295</span></p></div>
@@ -337,7 +337,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step8.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_9">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 9 of 295</span></p></div>
@@ -355,7 +355,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step9.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_10">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 10 of 295</span></p></div>
@@ -367,7 +367,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step10.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_11">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 11 of 295</span></p></div>
@@ -383,7 +383,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step11.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_12">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 12 of 295</span></p></div>
@@ -399,7 +399,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step12.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_13">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 13 of 295</span></p></div>
@@ -415,7 +415,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step13.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_14">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 14 of 295</span></p></div>
@@ -435,7 +435,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step14.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_15">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 15 of 295</span></p></div>
@@ -453,7 +453,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step15.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_16">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 16 of 295</span></p></div>
@@ -465,7 +465,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step16.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_17">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 17 of 295</span></p></div>
@@ -481,7 +481,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step17.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_18">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 18 of 295</span></p></div>
@@ -497,7 +497,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step18.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_19">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 19 of 295</span></p></div>
@@ -515,7 +515,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step19.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_20">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 20 of 295</span></p></div>
@@ -531,7 +531,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step20.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_21">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 21 of 295</span></p></div>
@@ -547,7 +547,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step21.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_22">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 22 of 295</span></p></div>
@@ -563,7 +563,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step22.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_23">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 23 of 295</span></p></div>
@@ -579,7 +579,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step23.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_24">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 24 of 295</span></p></div>
@@ -597,7 +597,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step24.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_25">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 25 of 295</span></p></div>
@@ -609,7 +609,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step25.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_26">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 26 of 295</span></p></div>
@@ -627,7 +627,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step26.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_27">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 27 of 295</span></p></div>
@@ -647,7 +647,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step27.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_28">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 28 of 295</span></p></div>
@@ -667,7 +667,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step28.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_29">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 29 of 295</span></p></div>
@@ -683,7 +683,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step29.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_30">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 30 of 295</span></p></div>
@@ -699,7 +699,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step30.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_31">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 31 of 295</span></p></div>
@@ -715,7 +715,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step31.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_32">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 32 of 295</span></p></div>
@@ -731,7 +731,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step32.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_33">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 33 of 295</span></p></div>
@@ -743,7 +743,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step33.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_34">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 34 of 295</span></p></div>
@@ -759,7 +759,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step34.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_35">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 35 of 295</span></p></div>
@@ -777,7 +777,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step35.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_36">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 36 of 295</span></p></div>
@@ -797,7 +797,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step36.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_37">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 37 of 295</span></p></div>
@@ -815,7 +815,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step37.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_38">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 38 of 295</span></p></div>
@@ -833,7 +833,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step38.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_39">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 39 of 295</span></p></div>
@@ -847,7 +847,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step39.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_40">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 40 of 295</span></p></div>
@@ -863,7 +863,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step40.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_41">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 41 of 295</span></p></div>
@@ -875,7 +875,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step41.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_42">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 42 of 295</span></p></div>
@@ -891,7 +891,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step42.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_43">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 43 of 295</span></p></div>
@@ -903,7 +903,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step43.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_44">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 44 of 295</span></p></div>
@@ -917,7 +917,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step44.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_45">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 45 of 295</span></p></div>
@@ -933,7 +933,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step45.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_46">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 46 of 295</span></p></div>
@@ -945,7 +945,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step46.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_47">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 47 of 295</span></p></div>
@@ -959,7 +959,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step47.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_48">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 48 of 295</span></p></div>
@@ -975,7 +975,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step48.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_49">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 49 of 295</span></p></div>
@@ -987,7 +987,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step49.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_50">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 50 of 295</span></p></div>
@@ -1001,7 +1001,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step50.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_51">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 51 of 295</span></p></div>
@@ -1015,7 +1015,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step51.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_52">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 52 of 295</span></p></div>
@@ -1029,7 +1029,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step52.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_53">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 53 of 295</span></p></div>
@@ -1041,7 +1041,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step53.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_54">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 54 of 295</span></p></div>
@@ -1055,7 +1055,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step54.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_55">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 55 of 295</span></p></div>
@@ -1071,7 +1071,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step55.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_56">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 56 of 295</span></p></div>
@@ -1087,7 +1087,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step56.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_57">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 57 of 295</span></p></div>
@@ -1099,7 +1099,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step57.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_58">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 58 of 295</span></p></div>
@@ -1113,7 +1113,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step58.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_59">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 59 of 295</span></p></div>
@@ -1127,7 +1127,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step59.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_60">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 60 of 295</span></p></div>
@@ -1139,7 +1139,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step60.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_61">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 61 of 295</span></p></div>
@@ -1153,7 +1153,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step61.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_62">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 62 of 295</span></p></div>
@@ -1169,7 +1169,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step62.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_63">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 63 of 295</span></p></div>
@@ -1185,7 +1185,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step63.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_64">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 64 of 295</span></p></div>
@@ -1197,7 +1197,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step64.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_65">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 65 of 295</span></p></div>
@@ -1211,7 +1211,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step65.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_66">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 66 of 295</span></p></div>
@@ -1227,7 +1227,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step66.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_67">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 67 of 295</span></p></div>
@@ -1239,7 +1239,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step67.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_68">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 68 of 295</span></p></div>
@@ -1253,7 +1253,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step68.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_69">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 69 of 295</span></p></div>
@@ -1269,7 +1269,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step69.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_70">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 70 of 295</span></p></div>
@@ -1281,7 +1281,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step70.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_71">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 71 of 295</span></p></div>
@@ -1295,7 +1295,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step71.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_72">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 72 of 295</span></p></div>
@@ -1311,7 +1311,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step72.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_73">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 73 of 295</span></p></div>
@@ -1323,7 +1323,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step73.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_74">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 74 of 295</span></p></div>
@@ -1337,7 +1337,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step74.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_75">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 75 of 295</span></p></div>
@@ -1353,7 +1353,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step75.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_76">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 76 of 295</span></p></div>
@@ -1365,7 +1365,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step76.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_77">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 77 of 295</span></p></div>
@@ -1379,7 +1379,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step77.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_78">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 78 of 295</span></p></div>
@@ -1395,7 +1395,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step78.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_79">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 79 of 295</span></p></div>
@@ -1415,7 +1415,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step79.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_80">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 80 of 295</span></p></div>
@@ -1427,7 +1427,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step80.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_81">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 81 of 295</span></p></div>
@@ -1443,7 +1443,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step81.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_82">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 82 of 295</span></p></div>
@@ -1463,7 +1463,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step82.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_83">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 83 of 295</span></p></div>
@@ -1475,7 +1475,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step83.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_84">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 84 of 295</span></p></div>
@@ -1489,7 +1489,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step84.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_85">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 85 of 295</span></p></div>
@@ -1505,7 +1505,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step85.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_86">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 86 of 295</span></p></div>
@@ -1525,7 +1525,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step86.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_87">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 87 of 295</span></p></div>
@@ -1537,7 +1537,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step87.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_88">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 88 of 295</span></p></div>
@@ -1553,7 +1553,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step88.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_89">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 89 of 295</span></p></div>
@@ -1573,7 +1573,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step89.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_90">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 90 of 295</span></p></div>
@@ -1585,7 +1585,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step90.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_91">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 91 of 295</span></p></div>
@@ -1599,7 +1599,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step91.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_92">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 92 of 295</span></p></div>
@@ -1613,7 +1613,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step92.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_93">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 93 of 295</span></p></div>
@@ -1631,7 +1631,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step93.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_94">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 94 of 295</span></p></div>
@@ -1647,7 +1647,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step94.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_95">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 95 of 295</span></p></div>
@@ -1663,7 +1663,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step95.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_96">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 96 of 295</span></p></div>
@@ -1675,7 +1675,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step96.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_97">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 97 of 295</span></p></div>
@@ -1691,7 +1691,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step97.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_98">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 98 of 295</span></p></div>
@@ -1703,7 +1703,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step98.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_99">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 99 of 295</span></p></div>
@@ -1719,7 +1719,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step99.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_100">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 100 of 295</span></p></div>
@@ -1739,7 +1739,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step100.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_101">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 101 of 295</span></p></div>
@@ -1751,7 +1751,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step101.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_102">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 102 of 295</span></p></div>
@@ -1767,7 +1767,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step102.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_103">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 103 of 295</span></p></div>
@@ -1779,7 +1779,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step103.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_104">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 104 of 295</span></p></div>
@@ -1795,7 +1795,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step104.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_105">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 105 of 295</span></p></div>
@@ -1815,7 +1815,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step105.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_106">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 106 of 295</span></p></div>
@@ -1827,7 +1827,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step106.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_107">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 107 of 295</span></p></div>
@@ -1843,7 +1843,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step107.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_108">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 108 of 295</span></p></div>
@@ -1855,7 +1855,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step108.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_109">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 109 of 295</span></p></div>
@@ -1871,7 +1871,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step109.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_110">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 110 of 295</span></p></div>
@@ -1883,7 +1883,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step110.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_111">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 111 of 295</span></p></div>
@@ -1897,7 +1897,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step111.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_112">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 112 of 295</span></p></div>
@@ -1911,7 +1911,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step112.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_113">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 113 of 295</span></p></div>
@@ -1925,7 +1925,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step113.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_114">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 114 of 295</span></p></div>
@@ -1945,7 +1945,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step114.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_115">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 115 of 295</span></p></div>
@@ -1963,7 +1963,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step115.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_116">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 116 of 295</span></p></div>
@@ -1979,7 +1979,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step116.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_117">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 117 of 295</span></p></div>
@@ -1997,7 +1997,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step117.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_118">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 118 of 295</span></p></div>
@@ -2017,7 +2017,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step118.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_119">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 119 of 295</span></p></div>
@@ -2033,7 +2033,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step119.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_120">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 120 of 295</span></p></div>
@@ -2049,7 +2049,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step120.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_121">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 121 of 295</span></p></div>
@@ -2061,7 +2061,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step121.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_122">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 122 of 295</span></p></div>
@@ -2077,7 +2077,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step122.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_123">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 123 of 295</span></p></div>
@@ -2089,7 +2089,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step123.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_124">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 124 of 295</span></p></div>
@@ -2107,7 +2107,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step124.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_125">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 125 of 295</span></p></div>
@@ -2119,7 +2119,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step125.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_126">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 126 of 295</span></p></div>
@@ -2135,7 +2135,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step126.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_127">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 127 of 295</span></p></div>
@@ -2147,7 +2147,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step127.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_128">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 128 of 295</span></p></div>
@@ -2161,7 +2161,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step128.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_129">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 129 of 295</span></p></div>
@@ -2179,7 +2179,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step129.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_130">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 130 of 295</span></p></div>
@@ -2199,7 +2199,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step130.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_131">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 131 of 295</span></p></div>
@@ -2215,7 +2215,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step131.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_132">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 132 of 295</span></p></div>
@@ -2233,7 +2233,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step132.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_133">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 133 of 295</span></p></div>
@@ -2253,7 +2253,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step133.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_134">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 134 of 295</span></p></div>
@@ -2269,7 +2269,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step134.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_135">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 135 of 295</span></p></div>
@@ -2285,7 +2285,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step135.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_136">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 136 of 295</span></p></div>
@@ -2297,7 +2297,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step136.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_137">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 137 of 295</span></p></div>
@@ -2311,7 +2311,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step137.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_138">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 138 of 295</span></p></div>
@@ -2325,7 +2325,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step138.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_139">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 139 of 295</span></p></div>
@@ -2339,7 +2339,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step139.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_140">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 140 of 295</span></p></div>
@@ -2357,7 +2357,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step140.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_141">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 141 of 295</span></p></div>
@@ -2373,7 +2373,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step141.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_142">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 142 of 295</span></p></div>
@@ -2389,7 +2389,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step142.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_143">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 143 of 295</span></p></div>
@@ -2401,7 +2401,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step143.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_144">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 144 of 295</span></p></div>
@@ -2419,7 +2419,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step144.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_145">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 145 of 295</span></p></div>
@@ -2433,7 +2433,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step145.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_146">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 146 of 295</span></p></div>
@@ -2447,7 +2447,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step146.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_147">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 147 of 295</span></p></div>
@@ -2463,7 +2463,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step147.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_148">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 148 of 295</span></p></div>
@@ -2479,7 +2479,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step148.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_149">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 149 of 295</span></p></div>
@@ -2493,7 +2493,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step149.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_150">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 150 of 295</span></p></div>
@@ -2509,7 +2509,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step150.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_151">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 151 of 295</span></p></div>
@@ -2523,7 +2523,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step151.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_152">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 152 of 295</span></p></div>
@@ -2537,7 +2537,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step152.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_153">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 153 of 295</span></p></div>
@@ -2555,7 +2555,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step153.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_154">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 154 of 295</span></p></div>
@@ -2573,7 +2573,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step154.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_155">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 155 of 295</span></p></div>
@@ -2591,7 +2591,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step155.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_156">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 156 of 295</span></p></div>
@@ -2603,7 +2603,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step156.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_157">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 157 of 295</span></p></div>
@@ -2621,7 +2621,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step157.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_158">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 158 of 295</span></p></div>
@@ -2637,7 +2637,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step158.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_159">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 159 of 295</span></p></div>
@@ -2655,7 +2655,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step159.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_160">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 160 of 295</span></p></div>
@@ -2671,7 +2671,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step160.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_161">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 161 of 295</span></p></div>
@@ -2687,7 +2687,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step161.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_162">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 162 of 295</span></p></div>
@@ -2703,7 +2703,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step162.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_163">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 163 of 295</span></p></div>
@@ -2717,7 +2717,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step163.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_164">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 164 of 295</span></p></div>
@@ -2729,7 +2729,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step164.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_165">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 165 of 295</span></p></div>
@@ -2749,7 +2749,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step165.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_166">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 166 of 295</span></p></div>
@@ -2767,7 +2767,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step166.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_167">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 167 of 295</span></p></div>
@@ -2783,7 +2783,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step167.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_168">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 168 of 295</span></p></div>
@@ -2801,7 +2801,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step168.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_169">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 169 of 295</span></p></div>
@@ -2817,7 +2817,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step169.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_170">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 170 of 295</span></p></div>
@@ -2831,7 +2831,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step170.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_171">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 171 of 295</span></p></div>
@@ -2843,7 +2843,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step171.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_172">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 172 of 295</span></p></div>
@@ -2861,7 +2861,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step172.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_173">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 173 of 295</span></p></div>
@@ -2877,7 +2877,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step173.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_174">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 174 of 295</span></p></div>
@@ -2889,7 +2889,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step174.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_175">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 175 of 295</span></p></div>
@@ -2905,7 +2905,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step175.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_176">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 176 of 295</span></p></div>
@@ -2917,7 +2917,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step176.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_177">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 177 of 295</span></p></div>
@@ -2933,7 +2933,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step177.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_178">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 178 of 295</span></p></div>
@@ -2945,7 +2945,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step178.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_179">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 179 of 295</span></p></div>
@@ -2961,7 +2961,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step179.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_180">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 180 of 295</span></p></div>
@@ -2973,7 +2973,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step180.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_181">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 181 of 295</span></p></div>
@@ -2989,7 +2989,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step181.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_182">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 182 of 295</span></p></div>
@@ -3001,7 +3001,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step182.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_183">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 183 of 295</span></p></div>
@@ -3017,7 +3017,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step183.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_184">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 184 of 295</span></p></div>
@@ -3029,7 +3029,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step184.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_185">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 185 of 295</span></p></div>
@@ -3045,7 +3045,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step185.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_186">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 186 of 295</span></p></div>
@@ -3057,7 +3057,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step186.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_187">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 187 of 295</span></p></div>
@@ -3073,7 +3073,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step187.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_188">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 188 of 295</span></p></div>
@@ -3085,7 +3085,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step188.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_189">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 189 of 295</span></p></div>
@@ -3101,7 +3101,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step189.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_190">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 190 of 295</span></p></div>
@@ -3113,7 +3113,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step190.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_191">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 191 of 295</span></p></div>
@@ -3129,7 +3129,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step191.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_192">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 192 of 295</span></p></div>
@@ -3143,7 +3143,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step192.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_193">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 193 of 295</span></p></div>
@@ -3159,7 +3159,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step193.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_194">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 194 of 295</span></p></div>
@@ -3175,7 +3175,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step194.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_195">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 195 of 295</span></p></div>
@@ -3189,7 +3189,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step195.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_196">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 196 of 295</span></p></div>
@@ -3205,7 +3205,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step196.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_197">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 197 of 295</span></p></div>
@@ -3223,7 +3223,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step197.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_198">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 198 of 295</span></p></div>
@@ -3243,7 +3243,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step198.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_199">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 199 of 295</span></p></div>
@@ -3263,7 +3263,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step199.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_200">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 200 of 295</span></p></div>
@@ -3279,7 +3279,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step200.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_201">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 201 of 295</span></p></div>
@@ -3299,7 +3299,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step201.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_202">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 202 of 295</span></p></div>
@@ -3313,7 +3313,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step202.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_203">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 203 of 295</span></p></div>
@@ -3329,7 +3329,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step203.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_204">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 204 of 295</span></p></div>
@@ -3343,7 +3343,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step204.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_205">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 205 of 295</span></p></div>
@@ -3357,7 +3357,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step205.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_206">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 206 of 295</span></p></div>
@@ -3375,7 +3375,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step206.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_207">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 207 of 295</span></p></div>
@@ -3393,7 +3393,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step207.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_208">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 208 of 295</span></p></div>
@@ -3407,7 +3407,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step208.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_209">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 209 of 295</span></p></div>
@@ -3421,7 +3421,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step209.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_210">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 210 of 295</span></p></div>
@@ -3435,7 +3435,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step210.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_211">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 211 of 295</span></p></div>
@@ -3449,7 +3449,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step211.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_212">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 212 of 295</span></p></div>
@@ -3465,7 +3465,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step212.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_213">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 213 of 295</span></p></div>
@@ -3479,7 +3479,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step213.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_214">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 214 of 295</span></p></div>
@@ -3493,7 +3493,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step214.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_215">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 215 of 295</span></p></div>
@@ -3509,7 +3509,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step215.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_216">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 216 of 295</span></p></div>
@@ -3527,7 +3527,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step216.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_217">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 217 of 295</span></p></div>
@@ -3547,7 +3547,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step217.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_218">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 218 of 295</span></p></div>
@@ -3565,7 +3565,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step218.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_219">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 219 of 295</span></p></div>
@@ -3581,7 +3581,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step219.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_220">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 220 of 295</span></p></div>
@@ -3601,7 +3601,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step220.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_221">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 221 of 295</span></p></div>
@@ -3619,7 +3619,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step221.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_222">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 222 of 295</span></p></div>
@@ -3639,7 +3639,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step222.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_223">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 223 of 295</span></p></div>
@@ -3653,7 +3653,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step223.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_224">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 224 of 295</span></p></div>
@@ -3669,7 +3669,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step224.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_225">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 225 of 295</span></p></div>
@@ -3685,7 +3685,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step225.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_226">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 226 of 295</span></p></div>
@@ -3703,7 +3703,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step226.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_227">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 227 of 295</span></p></div>
@@ -3719,7 +3719,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step227.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_228">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 228 of 295</span></p></div>
@@ -3733,7 +3733,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step228.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_229">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 229 of 295</span></p></div>
@@ -3749,7 +3749,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step229.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_230">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 230 of 295</span></p></div>
@@ -3763,7 +3763,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step230.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_231">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 231 of 295</span></p></div>
@@ -3779,7 +3779,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step231.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_232">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 232 of 295</span></p></div>
@@ -3797,7 +3797,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step232.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_233">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 233 of 295</span></p></div>
@@ -3817,7 +3817,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step233.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_234">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 234 of 295</span></p></div>
@@ -3833,7 +3833,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step234.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_235">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 235 of 295</span></p></div>
@@ -3853,7 +3853,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step235.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_236">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 236 of 295</span></p></div>
@@ -3873,7 +3873,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step236.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_237">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 237 of 295</span></p></div>
@@ -3889,7 +3889,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step237.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_238">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 238 of 295</span></p></div>
@@ -3909,7 +3909,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step238.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_239">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 239 of 295</span></p></div>
@@ -3927,7 +3927,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step239.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_240">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 240 of 295</span></p></div>
@@ -3941,7 +3941,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step240.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_241">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 241 of 295</span></p></div>
@@ -3961,7 +3961,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step241.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_242">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 242 of 295</span></p></div>
@@ -3979,7 +3979,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step242.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_243">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 243 of 295</span></p></div>
@@ -3997,7 +3997,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step243.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_244">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 244 of 295</span></p></div>
@@ -4015,7 +4015,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step244.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_245">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 245 of 295</span></p></div>
@@ -4035,7 +4035,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step245.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_246">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 246 of 295</span></p></div>
@@ -4049,7 +4049,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step246.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_247">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 247 of 295</span></p></div>
@@ -4067,7 +4067,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step247.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_248">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 248 of 295</span></p></div>
@@ -4087,7 +4087,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step248.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_249">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 249 of 295</span></p></div>
@@ -4105,7 +4105,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step249.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_250">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 250 of 295</span></p></div>
@@ -4125,7 +4125,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step250.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_251">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 251 of 295</span></p></div>
@@ -4141,7 +4141,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step251.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_252">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 252 of 295</span></p></div>
@@ -4157,7 +4157,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step252.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_253">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 253 of 295</span></p></div>
@@ -4177,7 +4177,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step253.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_254">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 254 of 295</span></p></div>
@@ -4195,7 +4195,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step254.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_255">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 255 of 295</span></p></div>
@@ -4213,7 +4213,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step255.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_256">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 256 of 295</span></p></div>
@@ -4227,7 +4227,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step256.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_257">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 257 of 295</span></p></div>
@@ -4247,7 +4247,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step257.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_258">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 258 of 295</span></p></div>
@@ -4261,7 +4261,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step258.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_259">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 259 of 295</span></p></div>
@@ -4275,7 +4275,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step259.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_260">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 260 of 295</span></p></div>
@@ -4295,7 +4295,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step260.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_261">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 261 of 295</span></p></div>
@@ -4309,7 +4309,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step261.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_262">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 262 of 295</span></p></div>
@@ -4325,7 +4325,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step262.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_263">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 263 of 295</span></p></div>
@@ -4345,7 +4345,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step263.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_264">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 264 of 295</span></p></div>
@@ -4359,7 +4359,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step264.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_265">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 265 of 295</span></p></div>
@@ -4373,7 +4373,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step265.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_266">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 266 of 295</span></p></div>
@@ -4387,7 +4387,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step266.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_267">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 267 of 295</span></p></div>
@@ -4401,7 +4401,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step267.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_268">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 268 of 295</span></p></div>
@@ -4415,7 +4415,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step268.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_269">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 269 of 295</span></p></div>
@@ -4429,7 +4429,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step269.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_270">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 270 of 295</span></p></div>
@@ -4443,7 +4443,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step270.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_271">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 271 of 295</span></p></div>
@@ -4461,7 +4461,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step271.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_272">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 272 of 295</span></p></div>
@@ -4481,7 +4481,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step272.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_273">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 273 of 295</span></p></div>
@@ -4499,7 +4499,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step273.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_274">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 274 of 295</span></p></div>
@@ -4513,7 +4513,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step274.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_275">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 275 of 295</span></p></div>
@@ -4527,7 +4527,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step275.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_276">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 276 of 295</span></p></div>
@@ -4545,7 +4545,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step276.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_277">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 277 of 295</span></p></div>
@@ -4563,7 +4563,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step277.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_278">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 278 of 295</span></p></div>
@@ -4581,7 +4581,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step278.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_279">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 279 of 295</span></p></div>
@@ -4597,7 +4597,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step279.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_280">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 280 of 295</span></p></div>
@@ -4613,7 +4613,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step280.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_281">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 281 of 295</span></p></div>
@@ -4629,7 +4629,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step281.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_282">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 282 of 295</span></p></div>
@@ -4643,7 +4643,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step282.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_283">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 283 of 295</span></p></div>
@@ -4657,7 +4657,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step283.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_284">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 284 of 295</span></p></div>
@@ -4671,7 +4671,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step284.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_285">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 285 of 295</span></p></div>
@@ -4689,7 +4689,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step285.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_286">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 286 of 295</span></p></div>
@@ -4707,7 +4707,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step286.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_287">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 287 of 295</span></p></div>
@@ -4723,7 +4723,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step287.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_288">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 288 of 295</span></p></div>
@@ -4737,7 +4737,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step288.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_289">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 289 of 295</span></p></div>
@@ -4755,7 +4755,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step289.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_290">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 290 of 295</span></p></div>
@@ -4769,7 +4769,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step290.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_291">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 291 of 295</span></p></div>
@@ -4783,7 +4783,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step291.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_292">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 292 of 295</span></p></div>
@@ -4797,7 +4797,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step292.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_293">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 293 of 295</span></p></div>
@@ -4811,7 +4811,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step293.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_294">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 294 of 295</span></p></div>
@@ -4823,7 +4823,7 @@
             </div>
             <div style="float:left"><img height="600" width="800" src="Building Instructions [Rooikat]-images/Step294.png" /></div>
             <div style="clear:both"></div>
-        </div>			
+        </div>
         <div class="step" id="step_295">
             <div style="float:left">
                 <div class="stepTextTop"><p><span style="font-weight:bold">Step 295 of 295</span></p></div>
@@ -4848,7 +4848,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -4859,7 +4859,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -4870,7 +4870,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -4881,7 +4881,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -4892,7 +4892,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -4903,7 +4903,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -4914,7 +4914,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -4925,7 +4925,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -4936,7 +4936,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -4947,7 +4947,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -4958,7 +4958,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -4969,7 +4969,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -4980,7 +4980,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -4991,7 +4991,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5002,7 +5002,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5013,7 +5013,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5024,7 +5024,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5035,7 +5035,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5046,7 +5046,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5057,7 +5057,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5068,7 +5068,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5079,7 +5079,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5090,7 +5090,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5101,7 +5101,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5112,7 +5112,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5123,7 +5123,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5134,7 +5134,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5145,7 +5145,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5156,7 +5156,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5167,7 +5167,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5178,7 +5178,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5189,7 +5189,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5200,7 +5200,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5211,7 +5211,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5222,7 +5222,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5233,7 +5233,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5244,7 +5244,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5255,7 +5255,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5266,7 +5266,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5277,7 +5277,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5288,7 +5288,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5299,7 +5299,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5310,7 +5310,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5321,7 +5321,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5332,7 +5332,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5343,7 +5343,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5354,7 +5354,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5365,7 +5365,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5376,7 +5376,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5387,7 +5387,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5398,7 +5398,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5409,7 +5409,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5420,7 +5420,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5431,7 +5431,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5442,7 +5442,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5453,7 +5453,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5464,7 +5464,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5475,7 +5475,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5486,7 +5486,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5497,7 +5497,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5508,7 +5508,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5519,7 +5519,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5530,7 +5530,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5541,7 +5541,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5552,7 +5552,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5563,7 +5563,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5574,7 +5574,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5585,7 +5585,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5596,7 +5596,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5607,7 +5607,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5618,7 +5618,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5629,7 +5629,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 				<div class="biElement">
                     <table border="0">
                         <tr style="vertical-align:middle">
@@ -5640,7 +5640,7 @@
 				        </tr>
                     </table>
                 </div>
-                
+
 
             <div style="clear:both"></div>
         </div>
@@ -5657,9 +5657,7 @@
                     <td><a onclick="window.print();return false;" href="#"><img border="0" alt="Print" src="Building Instructions [Rooikat]-images/Images/PrintIcon.png" /></a></td>
                 </tr>
             </table>
-        </div> 
+        </div>
 		<div style="clear:both;">&nbsp;</div>
-		<div class="footer">© 2012 The LEGO Group. All rights reserved.<br />
-Use of the LEGO Digital Designer html print tool, signifies your agreement to the terms of use.</div>
 	</body>
 </html>
