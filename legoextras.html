@@ -6,19 +6,23 @@
     <title>Osi's stuff</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <style>
-      body {background-color: #FF9ED1;}
+      body { background-color: #BFA9FF;}
       h1, h2, h3, h4, h5, h6 { font-family: "Ubuntu", Arial, serif; font-weight: 700; }
       p, a, div { font-family: "Ubuntu", Arial, serif; font-weight: 500; }
+      div.well { margin-top: 80px; }
+      img { margin-top: 20px; margin-bottom: 20px; }
+      #my-row { display: table; }
+      #my-row .panel {  float: none; display: table-cell; vertical-align: top }
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="index.html">Osi's little corner of the internet</a>
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a>LEGOs</a></li>
+          <li class="active"><a href="lego.html">LEGOs</a></li>
           <li><a href="links.html">Me around the web</a></li>
           <li><a href="resume.html">Résumé</a></li>
         </ul>
@@ -33,7 +37,7 @@
 
     <div class="container">
       <div class="well well-sm">
-        <h2>vehicle</h2>
+        <h2>Axles</h2>
         <p>
           A repository of various axles I have designed and/or used in my vehicles.
           <br/>
@@ -46,7 +50,7 @@
             <img src="elements/axle.png" class="img-responsive img-rounded" alt="axles">
           </div>
           <div class="col-sm-2 panel" style="background-color: #E6DDFF;">
-          <a href="lego/axle/***.lxf" role="button" class="btn btn-primary">Download .lxf file</a>
+          <a href="lego/axle/trailingaxle.lxf" role="button" class="btn btn-primary">Download .lxf file</a>
           </div>
           <div class="col-sm-6 panel" style="background-color: #E6DDFF;">
             mid size trailing axle, powered by XLs
@@ -58,8 +62,8 @@
             <img src="elements/axle.png" class="img-responsive img-rounded" alt="axles">
           </div>
           <div class="col-sm-2 panel" style="background-color: #E6DDFF;">
-          <a href="lego/axle/***.lxf" role="button" class="btn btn-primary">front axle .lxf file</a>
-          <a href="lego/axle/***.lxf" role="button" class="btn btn-primary">rear axle .lxf file</a>
+          <a href="lego/axle/curbjumperfront.lxf" role="button" class="btn btn-primary">front axle .lxf file</a>
+          <a href="lego/axle/curbjumperrear.lxf" role="button" class="btn btn-primary">rear axle .lxf file</a>
           </div>
           <div class="col-sm-6 panel" style="background-color: #E6DDFF;">
             Solid Axles from the Curbjumper; strong and robust, but relativley low ground clearance
@@ -71,7 +75,7 @@
             <img src="elements/axle.png" class="img-responsive img-rounded" alt="axles">
           </div>
           <div class="col-sm-2 panel" style="background-color: #E6DDFF;">
-          <a href="lego/axle/***.lxf" role="button" class="btn btn-primary">Download .lxf file</a>
+          <a href="lego/axle/trophychassisrear.lxf" role="button" class="btn btn-primary">Download .lxf file</a>
           </div>
           <div class="col-sm-6 panel" style="background-color: #E6DDFF;">
             Prototype Trophy truck independent trailing axles, powered by individual L motors
@@ -83,10 +87,10 @@
             <img src="elements/axle.png" class="img-responsive img-rounded" alt="axles">
           </div>
           <div class="col-sm-2 panel" style="background-color: #E6DDFF;">
-          <a href="lego/axle/***.lxf" role="button" class="btn btn-primary">Download .lxf file</a>
+          <a href="lego/axle/trophychassisfront.lxf" role="button" class="btn btn-primary">Download .lxf file</a>
           </div>
           <div class="col-sm-6 panel" style="background-color: #E6DDFF;">
-            simple steered independent suspension
+            Prototype Trophy truck simple steered independent suspension
           </div>
         </div>
 
@@ -109,6 +113,31 @@
               A fast 2 input one output transmission. Designed for light vehicles, this transmission will disengage under heavy load.
             </div>
           </div>
+      </div>
+
+      <div class="container">
+        <div class="well well-sm">
+          <h2>Dune Buggy mk1</h2>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+              Complete
+            </div>
+          </div>
+        </div>
+        <div id="my-row" class="row">
+          <div class="col-sm-4 col-xs-4 panel" style="background-color: #9F7FFF;">
+            <img src="elements/dbmk1.png" class="img-responsive img-rounded" alt="dune buggy mark 1">
+          </div>
+          <div class="col-sm-2 panel" style="background-color: #E6DDFF;">
+            <a href="lego/dbmk1/DuneBuggyMk1.lxf" role="button" class="btn btn-primary">Download .lxf file</a>
+            <a href="lego/dbmk1/dunebuggymk1.html" target="_blank" role="button" class="btn btn-info">Instructions</a>
+          </div>
+          <div class="col-sm-6 panel" style="background-color: #E6DDFF;">
+            An alright buggy, but underpowered.
+            <br/>
+            requires 1 S-Brick or IR receiver
+          </div>
+        </div>
       </div>
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
