@@ -1,0 +1,32 @@
+/* Generated using http://instantsprite.com/ */
+/* Make sure to select the correct naming for the CSS classes */
+
+
+.sprite { background: url('../icons/sprite2.png') no-repeat top left; width: 48px; height: 48px;  } 
+.sprite.icon-001-Home { background-position: 0 0; } 
+.sprite.icon-003-ShoppingCart { background-position: 0 -58px; } 
+.sprite.icon-053-Search { background-position: 0 -116px; } 
+.sprite.icon-073-Setting { background-position: 0 -174px; } 
+.sprite.icon-074-Dashboard { background-position: 0 -232px; } 
+.sprite.icon-076-Business { background-position: 0 -290px; } 
+.sprite.icon-078-Money { background-position: 0 -348px; } 
+.sprite.icon-080-Stacks { background-position: 0 -406px; } 
+.sprite.icon-103-Person { background-position: 0 -464px; } 
+.sprite.icon-105-AddUser { background-position: 0 -522px; } 
+.sprite.icon-108-Group { background-position: 0 -580px; } 
+.sprite.icon-134-Power { background-position: 0 -638px; } 
+.sprite.icon-117-Video { background-position: 0 -696px; width: 32px; height: 32px; } 
+.sprite.icon-141-GlobeAS { background-position: 0 -738px; } 
+.sprite.icon-182-Check { background-position: 0 -796px; width: 32px; height: 32px; } 
+.sprite.icon-186-CheckCircleAlt { background-position: 0 -838px; } 
+.sprite.icon-199-DownloadButton { background-position: 0 -896px; } 
+.sprite.icon-199-DownloadButton-gray { background-position: 0 -954px; width: 32px; height: 32px; } 
+.sprite.icon-223-Presentation { background-position: 0 -996px; width: 32px; height: 32px; } 
+.sprite.icon-220-Documents { background-position: 0 -1038px; } 
+.sprite.icon-224-BarChart { background-position: 0 -1096px; } 
+.sprite.icon-245-QuestionCircle { background-position: 0 -1154px; } 
+.sprite.icon-301-Lock { background-position: 0 -1212px; } 
+.sprite.icon-302-Unlock { background-position: 0 -1270px; } 
+.sprite.icon-320-Book { background-position: 0 -1328px; } 
+.sprite.icon-344-Award { background-position: 0 -1386px; } 
+.sprite.icon-345-Reading { background-position: 0 -1444px; } 
