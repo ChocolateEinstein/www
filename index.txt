@@ -8,8 +8,6 @@
 
 	Well, you find a .txt file.
 
-	Congratulations, mate.
-
 
 
 
